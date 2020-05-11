@@ -12,7 +12,6 @@ function count(filename) {
 			population = population + parseInt(tempNum)
 		}
 	}
-	console.log(population)
 	return parseInt(population);
 }
 

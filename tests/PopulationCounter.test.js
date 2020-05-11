@@ -5,7 +5,7 @@ describe('Population Counter', () => {
 	it('should calculate the world population', () => {
 		
 		const filename = 'data/worldcitiespop.csv'
-		const expectedData = jest.fn(() => {
+		//const expectedData = jest.fn(() => {
 			/**
 			//Read, parse and calculate the population 
 			const fileData = fs.readFileSync(filename, 'utf-8');
@@ -25,9 +25,11 @@ describe('Population Counter', () => {
 
 			return population;
 			**/
-			return 1347982728;
-		});
+			//return 1347982728;
+		//});
 
-		expect(PopulationCounter.count(filename)).toBe(expectedData);
+		expected = 1347982728;
+
+		expect(PopulationCounter.count(filename)).toBe(expected);
 	})
 });
